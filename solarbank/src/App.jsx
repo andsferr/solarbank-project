@@ -1,4 +1,7 @@
-import Header from './components/Header/Header'
+import Header from './components/Header.jsx'
+import Depositar from './components/Depositar.jsx'
+import Sacar from './components/Sacar.jsx'
+import Transferir from './components/Transferir.jsx'
 import './App.css'
 
 function App() {
@@ -10,6 +13,18 @@ function App() {
         <section className="welcome-section">
           <h2>Bem-vindo ao SolarBank! 👋</h2>
           <p>Seu banco digital de confiança</p>
+        </section>
+
+        <section id="depositar">
+          <Depositar />
+        </section>
+
+        <section id="sacar">
+          <Sacar />
+        </section>
+
+        <section id="transferir">
+          <Transferir />
         </section>
       </main>
     </div>
